@@ -194,19 +194,42 @@ public class ListStanford{
 	 Iterate through the list left-right.
 	 Move/insert each node to the front of the result list 	 
 	*/	
-	public static ListNode reverse(ListNode head){
-		ListNode current = head;
-		ListNode result = null;
-		ListNode next = null;
+	public ListNode reverse(ListNode head){
 		
-		while(current != null){
-			next = current.next;
-			current.next = result;
-			result = current;
-			current = next;
+		if (head == NULL || head.next == NULL)
+		return;  //empty or just one node in list
+
+		ListNode Second = head.next;
+	
+		//store third node before we change 
+		ListNode Third = Second.next;  
+
+		//Second's next pointer
+		Second.next = head;  //second now points to head
+		head.next = NULL;  //change head pointer to NULL
+
+		//only two nodes, which we already reversed
+		if (Third == NULL) return;  
+
+		ListNode CurrentNode = Third;
+
+		ListNode PreviousNode = Second;
+
+		while (CurrentNode != NULL){
+			ListNode NextNode = CurrentNode.next;
+
+			CurrentNode.next = PreviousNode;
+
+			/*  repeat the process, but have to reset
+	    		the PreviousNode and CurrentNode
+			*/
+
+			PreviousNode = CurrentNode;
+			CurrentNode = NextNode;  
 		}
-		
-		reture result;
+
+			head  = PreviousNode; //reset the head node
+		}
 	}
 		
 }
