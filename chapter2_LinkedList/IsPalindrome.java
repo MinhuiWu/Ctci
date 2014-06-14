@@ -9,7 +9,7 @@ public class IsPalindrome{
 	 * 2) use extra stack, put half of the elements in the stack, use two pointer to get to the middle of the linkedlist
 	 * then compare the push elements of the stack and the remain half of the linkedlist
 	 *	
-	 * 3) reversive way		
+	 * 3) recursive way		
 	 */	
 		
 	//public boolean isPalindrome_One(ListNode head){
