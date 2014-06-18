@@ -20,7 +20,7 @@ public class TreeNode{
 		return left;
 	}
 	
-	public TreeNode getLeft(){
+	public TreeNode getRight(){
 		return right;
 	} 
 	
