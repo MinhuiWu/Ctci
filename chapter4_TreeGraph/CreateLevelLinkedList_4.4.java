@@ -4,8 +4,8 @@ import java.util.LinkedList;
 public class CreateLevelLinkedList{
 	/* binary Tree, create a linkedlist of all the nodes at a each depth
 	 *
-	 *	BFS: each level print out as linkedlist(iterative method)
-	 *  DFS: track each level of the nodes, pre-order traversal	(recursive method)
+	 *	BFS: each level print out as linkedlist(iterative method):using queue
+	 *  DFS: track each level of the nodes, pre-order traversal	(recursive method/ iterative method: using stack)
 	 */		
 	
 	
