@@ -8,6 +8,7 @@ public class CheckSubtree{
 		
 	public boolean checkSubtree(TreeNode rootOne, TreeNode rootTwo){
 		if(rootOne == null) return false;
+		if(rootTwo == null) return true;
 		
 		//find the beginning node of the two tree that match
 		if(rootOne.data == rootTwo.data) return checkHelper(rootOne, rootTwo);
