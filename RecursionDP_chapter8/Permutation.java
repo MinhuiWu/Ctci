@@ -62,7 +62,7 @@ public class Permutation{
           permu1(alphabet);
           System.out.println();
           permu2(alphabet);
-		  System.out.println();
+	  System.out.println();
     }
 	
 }
