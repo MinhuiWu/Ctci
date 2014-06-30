@@ -44,8 +44,8 @@ public class Permutation{
     private static void swap(char[] a, int i, int j) {
         char c;
         c = a[i];
-		a[i] = a[j]; 
-		a[j] = c;
+	a[i] = a[j]; 
+	a[j] = c;
        }
 	
 	
