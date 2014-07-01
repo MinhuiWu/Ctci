@@ -14,10 +14,10 @@ public class CreateMinBST{
 	public static TreeNode createMinBST(int[] array, int start, int end){
 		if(start > end) return null;
 		
-		int mid = (start + end)/2;
+		int mid = start + (high - start)/2;
 		TreeNode root = new TreeNode(array[mid]);
-		root.setLeft(createMinBST(array, start, mid - 1));
-		root.setRight(createMinBST(array, mid + 1, end));	
+		root.left(createMinBST(array, start, mid - 1));
+		root.right(createMinBST(array, mid + 1, end));	
 		return root;	
 	}
 	
