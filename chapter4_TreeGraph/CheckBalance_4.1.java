@@ -6,7 +6,7 @@ public class CheckBalance{
 		1) Left subtree of T is balanced
 		2) Right subtree of T is balanced
 		3) The difference between heights of left subtree and right subtree is not more than 1.
-	 * This ensures that operations on the tree are always guaranteed to have O(lg n) time, rather than O(n) time that they might have 		  in an unbalanced tree.	
+	 * This ensures that operations on the tree are always guaranteed to have O(lg n) time, rather than O(n) time that they might have in an unbalanced tree.	
 	 */
 	public int checkHeight(TreeNode root){
 		//check left
