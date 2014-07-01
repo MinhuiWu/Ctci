@@ -8,6 +8,7 @@ public class Combination{
 	    if (str.length() > 0) {
 	        System.out.println(prefix + str.charAt(0));
 	        combinationHelper(str.substring(1), prefix + str.charAt(0));
+	        //remove the current character before next iteration
 	        combinationHelper(str.substring(1), prefix);
 	    }	      
 	}
