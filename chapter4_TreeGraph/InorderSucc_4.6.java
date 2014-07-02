@@ -1,6 +1,3 @@
-import java.util.Stack
-
-
 public class InorderSucc{
 	/* find the in order traversal next successor in a BST(each node has a link to its parent)
 	 * Solution
@@ -33,7 +30,4 @@ public class InorderSucc{
 		}
 		return node;
 	}
-	
-	
-	
 }
