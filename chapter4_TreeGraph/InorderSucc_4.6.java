@@ -21,9 +21,9 @@ public class InorderSucc{
 			x = y;
 			y = y.parent;
 		}
-		return y
-
+		return y;
 	}
+	
 	
 	public TreeNode leftMost(TreeNode node){
 		if(node.left == null) return node;
