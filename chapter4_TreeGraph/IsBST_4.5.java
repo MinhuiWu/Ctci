@@ -29,7 +29,7 @@ public class IsBST{
 	//MAX MIN VALUE method
 	public boolean isBST(TreeNode root){
 		if(root == null) return true;
-		return isBST(root, MAX_VALUE, MIN_VALUE);
+		return isBST(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
 	} 
 		
 	public boolean isBST(TreeNode root, int max, int min){
