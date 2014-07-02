@@ -39,15 +39,10 @@ public class IsBST{
 		
 		if (root.right.data < root.data)  return false;
 		  
-		if (isBSThelper(root.left, root.data, min) || isBSThelper(root.right, max, root.data)) {
+		if (!isBSThelper(root.left, root.data, min) || !isBSThelper(root.right, max, root.data)) {
 			return false;
 		}
 		return true;
 	}
-	
-	
-	
-	
-	
 	
 }	
