@@ -3,6 +3,11 @@ import java.util.Stack
 
 public class InorderSucc{
 	/* find the in order traversal next successor in a BST(each node has a link to its parent)
+	 * Solution
+	 * 1) node have( both left child and) right child,
+	 *    successor: right child’s left most child
+	 * 2) node do not have right child, 
+	 *     if has parent, and it is its parent’s left node: sucessor---> parent
 	 */	
 	
 	public TreeNode inorderSucc(TreeNode root, TreeNode node){
