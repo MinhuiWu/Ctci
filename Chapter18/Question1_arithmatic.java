@@ -9,11 +9,12 @@ public class Arithmatic{
         
     } 
     
-    /*
+    
     public static int subtract(int a, int b) {
-        
+        b = add(~b, 1);
+        return add(a, b);
     }   
-    */
+    
     
     public static int multiply(int a, int b) {
         int sum = 0;
@@ -37,8 +38,9 @@ public class Arithmatic{
     
     public static void main(String[] str) {
         int a = 32;
-        int b = 5;
+        int b = 15;
         System.out.println(add(a, b));
+        System.out.println(subtract(a, b));
         System.out.println(multiply(a, b));
     }
 }
